@@ -572,3 +572,9 @@ shiny_gsk <- function(options = c("pca", "none")){
     runGadget( ui, server, viewer = viewer)
   }
 }
+library(shiny)
+library(GGally)
+library(ggplot2)
+library(psych)
+
+                                              
