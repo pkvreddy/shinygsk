@@ -576,41 +576,8 @@ library(shiny)
 library(GGally)
 library(ggplot2)
 library(psych)
+
 pca <- function() {
-if(!require(devtools)) {    install.packages("devtools");     require(devtools)}
-if(!require(Rcpp)) {    install.packages("Rcpp");     require(Rcpp)}
-if(!require(roxygen2)) {install.packages("roxygen2"); require(roxygen2)}
-if(!require(shiny)) {install.packages("shiny"); require(shiny)}
-library(Rcpp)
-library(devtools)
-library(roxygen2)
-library(shiny)
-# global items
-
-# check if pkgs are installed already, if not, install automatically:
-# (http://stackoverflow.com/a/4090208/1036500)
-list.of.packages <- c("ggplot2",
-                      "DT",
-                      "GGally",
-                      "psych",
-                      "MASS")
-
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
-
-# load all these
-lapply(list.of.packages, require, character.only = TRUE)
-
-#install.packages("devtools")
-#library(devtools)
-install_github("cran/latticeExtra")
-install_github("sjmgarnier/viridisLite")
-install_github("sjmgarnier/viridis")
-install_github("harrelfe/Hmisc")
-install_github("cran/bit")
-install_github("cran/ff")
-install_github("cran/ffbase")
-install_github("mtennekes/tabplot")
 
     server <- function(input, output) {
 
