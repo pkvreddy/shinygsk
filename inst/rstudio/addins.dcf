@@ -1,4 +1,4 @@
-Name: sas2csv
-Description: Converts sas files to csv files
-Binding: sas2csv
+Name: pca
+Description: Interactive Principal Component Analysis Tool
+Binding: pca
 Interactive: true
