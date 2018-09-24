@@ -31,11 +31,12 @@ lapply(list.of.packages, require, character.only = TRUE)
 install_github("cran/latticeExtra")
 install_github("sjmgarnier/viridisLite")
 install_github("sjmgarnier/viridis")
-install_github("harrelfe/Hmisc")
+install.packages("Hmisc")
 install_github("cran/bit")
 install_github("cran/ff")
 install_github("cran/ffbase")
 install_github("mtennekes/tabplot")
+library(Hmisc)
 
 shiny_gsk <- function(options = c("pca", "none")){
 
